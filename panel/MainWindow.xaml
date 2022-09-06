@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:panel"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FFD8FFFE">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="247*" />
             <ColumnDefinition Width="137*" />
