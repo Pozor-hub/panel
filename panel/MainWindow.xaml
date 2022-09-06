@@ -7,43 +7,64 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <DockPanel Name="dcPanel" Grid.ColumnSpan="2" Margin="0,0,266,0">
-            <Button Name="TopRect" DockPanel.Dock="Top" Background="#FFEED190"    
-Height="50" Content="Top"/>
-            <Button Name="LeftRect" DockPanel.Dock="Left" Background="#FFE604C8"    
-Width="50" Content="Left"/>
-            <Button Name="RightRect" DockPanel.Dock="Right" Background="#FF047572"    
-Width="50" Content="Right"/>
-            <Button Name="BottomRect" DockPanel.Dock="Bottom" Background="#FF00A219"    
-Height="50"/>
-            <Button Name="Fill" Background="#FFF35E5E" />
-        </DockPanel>
-        <Canvas Grid.Column="1" Grid.ColumnSpan="2" Margin="5,10,261,-10" Grid.RowSpan="3" >
-            <Ellipse Width="100" Height="100" Fill="#FFEA4A4A" />
-            <Ellipse Width="80" Height="80" Fill="#FF352200" />
-            <Ellipse Width="60" Height="60" Fill="#FF00FF4A" />
-            <Ellipse Width="40" Height="40" Fill="#FF5002FF" />
-            <Ellipse Width="20" Height="20" Fill="Red" />
-        </Canvas>
-        <WrapPanel Grid.Column="2" Margin="10,10,-10,-10" Grid.RowSpan="3" >
-            <Ellipse Width="100" Height="100" Fill="Red" />
-            <Ellipse Width="90" Height="90" Fill="Orange" />
-            <Ellipse Width="80" Height="80" Fill="Yellow" />
-            <Ellipse Width="70" Height="70" Fill="LightGreen" />
-            <Ellipse Width="60" Height="60" Fill="Green" />
-            <Ellipse Width="50" Height="50" Fill="LightBlue" />
-            <Ellipse Width="40" Height="40" Fill="Blue" />
-            <Ellipse Width="30" Height="30" Fill="Black" />
-        </WrapPanel>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
+            <ColumnDefinition Width="247*" />
+            <ColumnDefinition Width="137*" />
+            <ColumnDefinition Width="416*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="270" />
             <RowDefinition Height="0" />
             <RowDefinition Height="0" />
         </Grid.RowDefinitions>
+
+        <DockPanel Name="dcPanel">
+            <Button Name="TopRect" DockPanel.Dock="Top" Background="#FFEED190"    
+            Height="50" Content="Top"/>
+            <Button Name="LeftRect" DockPanel.Dock="Left" Background="#FFE604C8"    
+            Width="50" Content="Left"/>
+            <Button Name="RightRect" DockPanel.Dock="Right" Background="#FF047572"    
+            Width="50" Content="Right"/>
+            <Button Name="BottomRect" DockPanel.Dock="Bottom" Background="#FF00A219"    
+            Height="50"/>
+            <Button Name="Fill" Background="#FFF35E5E" />
+        </DockPanel>
+        <Canvas Margin="17,3,35,100" Grid.Column="1" >
+            <Ellipse Width="100" Height="100" Fill="#FFEA4A4A" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Ellipse Width="80" Height="80" Fill="#FF352200" />
+            <Ellipse Width="60" Height="60" Fill="#FF00FF4A" />
+            <Ellipse Width="40" Height="40" Fill="#FF5002FF" />
+            <Ellipse Width="20" Height="20" Fill="Red" />
+        </Canvas>
+        <WrapPanel Margin="2,10,10,-154" Grid.Row="2" Grid.ColumnSpan="3" >
+            <Button Width="100" Height="100" x:Name="_1" Content="ОК"/>
+            <Button Width="90" Height="90"   Content="ОК"/>
+            <Button Width="80" Height="80"   Content="ОК"/>
+            <Button Width="70" Height="70"   Content="ОК"/>
+            <Button Width="60" Height="60"   Content="ОК"/>
+            <Button Width="50" Height="50"   Content="ОК"/>
+            <Button Width="40" Height="40"   Content="ОК"/>
+            <Button Width="30" Height="30"   Content="ОК"/>
+        </WrapPanel>
+
+        <UniformGrid Rows="4" Columns="4" Grid.Column="2" Margin="54,4,28,10">
+            <Button Background="red" Margin="2,2,2,2"/>
+            <Button Background="blue" Margin="2,2,2,2"/>
+            <Button Background="red" Margin="2,2,2,2"/>
+            <Button Background="blue" Margin="2,2,2,2"/>
+            <Button Background="red" Margin="2,2,2,2"/>
+            <Button Background="blue" Margin="2,2,2,2"/>
+            <Button Background="red" Margin="2,2,2,2"/>
+            <Button Background="blue" Margin="2,2,2,2"/>
+            <Button Background="#FF00FFED" Margin="2,2,2,2"/>
+            <Button Background="#FFFFEA00" Margin="2,2,2,2"/>
+            <Button Background="#FFFF00A4" Margin="2,2,2,2"/>
+            <Button Background="#FF00FF33" Margin="2,2,2,2"/>
+            <Button Background="#FF00FF33" Margin="2,2,2,2"/>
+            <Button Background="#FF00FF33" Margin="2,2,2,2"/>
+            <Button Background="#FF00FF33" Margin="2,2,2,2"/>
+            <Button Background="#FF00FF33" Margin="2,2,2,2"/>
+
+        </UniformGrid>
     </Grid>
 </Window>
